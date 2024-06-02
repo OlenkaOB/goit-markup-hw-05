@@ -509,6 +509,7 @@ p {
 .footer-container {
   display: flex;
   align-items: baseline;
+  width: 1440px;
 }
 .container-box {
   margin-right: 120px;
@@ -563,6 +564,7 @@ p {
 
 .form {
   margin: 80px;
+  
 }
 .form-input {
   border: 1px solid #fff;
