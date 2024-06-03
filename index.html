@@ -456,23 +456,26 @@
     </footer>
     <div class="modal-overlay">
       <div class="modal">
+        <button class="modal-close" type="button">x</button>
+       <p class="modal-text">Leave your contacts and we will call you back</p> 
        <form class="modal-form">
-        <fieldset>
-        <legend class="modal-group">Leave your contacts and we will call you back</legend>
-        <label class="modal-title">Name
-        <input type="text" name="username"/>
-        </label>
-        <label class="modal-title">Phone
-          <input type="text" name="username">
-        </label>
-        <label class="modal-title">Email
-          <input type="text" name="username">
-        </label>
-        <label class="modal-title">Comment
-       <input type="text" name="username">
-
-        </label>
-        </fieldset>
+       <div class="modal-conteiner">
+        <label  for="" class="modal-label">Name</label>
+        <input type="text" name="name" class="modal-input" placeholder="enter-name" required id="">
+        </div>
+        <div class="modal-conteiner">
+        <label  for="" class="modal-label" >Phone</label>
+        <input type="text" name="tel" class="modal-input" placeholder="enter-tel" required id="">
+        </div>
+        <div class="modal-conteiner">
+        <label for="" class="modal-label" >Email</label>
+        <input type="text" name="email" class="modal-input" placeholder="enter-email" id="">
+        </div>
+        <div class="modal-conteiner">
+        <label for="" class="modal-label">Comment</label>
+        <textarea name="comment" id="comment" class="modal-text-text"></textarea>
+        </div>
+        <button type="button" class="modal-btn">Send</button>
        </form>
       </div>
     </div>
