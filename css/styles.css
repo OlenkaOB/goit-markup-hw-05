@@ -564,6 +564,8 @@ p {
 
 .form {
   margin: 80px;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input {
   border: 1px solid #fff;
@@ -590,21 +592,48 @@ p {
 .modal-overlay {
   width: 100%;
   height: 100%;
-  background-color: rgba (30, 24, 35, 0.452);
   position: fixed;
   top: 0;
   border: 4px;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 .modal-close {
   position: absolute;
   top: 24px;
   right: 24px;
   border: none;
-  background-color: transparent;
-  border-radius: 4px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover {
+  background-color: #404bbf;
+}
+.modal-close:focus {
+  background-color: #404bbf;
+}
+.modal-icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-icon-close:hover {
+  fill: #ffffff;
+}
+
+.modal-icon-close:focus {
+  fill: #ffffff;
 }
 .modal-conteiner {
-  padding-top: 8px;
+  margin-bottom: 8px;
 }
 .modal-text {
   font-family: "Roboto", sans-serif;
@@ -616,6 +645,11 @@ p {
   color: #2e2f42;
   margin-bottom: 16px;
   margin-top: 72px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 .modal {
   position: absolute;
@@ -625,6 +659,14 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-height: 584px;
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form {
 }
 .modal-input {
   width: 100%;
@@ -639,9 +681,20 @@ p {
   margin-right: 24px;
   width: 360px;
   height: 40px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
-  border: 1px solid #4d5ae5;
+  border-color: #4d5ae5;
+}
+.modal-conteiner {
+  position: relative;
+}
+
+.modal-icon {
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn {
   display: flex;
@@ -666,6 +719,7 @@ p {
   letter-spacing: 0.04em;
   color: #8e8f99;
   margin-left: 24px;
+  line-height: 1.17;
 }
 .modal-text-text {
   border: 1px solid rgba(46, 47, 66, 0.4);
