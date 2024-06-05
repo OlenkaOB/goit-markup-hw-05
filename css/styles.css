@@ -722,7 +722,6 @@ p {
   border-radius: 4px;
   height: 120px;
   resize: none;
-
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -769,7 +768,7 @@ p {
   margin-bottom: 24px;
 }
 
-.visually-hidden:checked + .privacy-span {
+.visually-hidden:checked + .visually-hidden {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
