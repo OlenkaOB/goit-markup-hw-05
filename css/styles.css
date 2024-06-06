@@ -617,9 +617,9 @@ p {
   pointer-events: none;
 }
 .is-open {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none; */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; */
 }
 .modal-close {
   position: absolute;
@@ -646,16 +646,16 @@ p {
   background-color: #404bbf;
   border: none;
 }
+.modal-close:hover > .modal-icon-close {
+  fill: #ffffff;
+}
+.modal-close:focus > .modal-icon-close {
+  fill: #ffffff;
+}
 .modal-icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-icon-close:hover {
-  fill: #ffffff;
-}
 
-.modal-icon-close:focus {
-  fill: #ffffff;
-}
 .modal-conteiner {
   margin-bottom: 8px;
 }
@@ -713,7 +713,7 @@ p {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
-  color: #2e2f42;
+  fill: #2e2f42;
 }
 
 .modal-btn {
@@ -762,9 +762,7 @@ p {
 .modal-text-text:focus {
   border-color: #4d5ae5;
 }
-.modal-icon {
-  fill: #4d5ae5;
-}
+
 .comment {
   margin-bottom: 16px;
 }
@@ -796,7 +794,7 @@ p {
   margin-bottom: 24px;
 }
 
-.visually-hidden:checked + .user-privacy > .privacy-span {
+.modal-check:checked + .user-privacy > .privacy-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
